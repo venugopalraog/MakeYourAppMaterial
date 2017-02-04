@@ -20,11 +20,29 @@
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimaryDark">@color/color_primary_dark</item>
         <item name="colorPrimary">@color/color_primary</item>
+        <item name="android:colorAccent">@color/color_accent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <item name="android:windowExitTransition">@transition/grid_exit</item>
+        <item name="android:windowReenterTransition">@transition/slide_in</item>
 
     </style>
 
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ExpandedTitleText" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColor">#E3F2FD</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <style name="CollapsedTitleText" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColor">#E3F2FD</item>
+        <item name="android:textSize">24sp</item>
     </style>
 
 </resources>
